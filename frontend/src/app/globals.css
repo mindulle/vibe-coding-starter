@@ -1,9 +1,32 @@
 @import "tailwindcss";
 
+:root {
+  --color-ivory-canvas: #faf9f5;
+  --color-pure-white: #ffffff;
+  --color-warm-parchment: #f0eee6;
+  --color-ink-black: #141413;
+  --color-charcoal: #1f1e1d;
+  --color-warm-slate: #3d3d3a;
+  --color-stone-gray: #73726c;
+  --color-linen-border: #dedcd1;
+  --color-dust-blue: #ccdbe8;
+
+  --font-editorial: "Source Serif 4", "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-ui: "IBM Plex Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background: var(--color-ivory-canvas);
+  color: var(--color-ink-black);
+  font-family: var(--font-ui);
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+  font-feature-settings: "liga" 1;
 }
